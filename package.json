@@ -1,23 +1,26 @@
 {
   "name": "budget-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A budget tracking app that uses IndexedDB for offline use.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint './**/*.js' --quiet",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "start": "node server.js",
+    "watch": "nodemon app.js",
+    "seed": "node seeders/seed.js",
     "lite-server": "lite-server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coding-boot-camp/unit18hw.git"
+    "url": "git+https://github.com/jdavidrice/online-offline-budget-tracker.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Jeremy Rice",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coding-boot-camp/unit18hw/issues"
+    "url": "https://github.com/jdavidrice/online-offline-budget-tracker/issues"
   },
-  "homepage": "https://github.com/coding-boot-camp/unit18hw#readme",
+  "homepage": "https://github.com/jdavidrice/online-offline-budget-tracker#readme",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
