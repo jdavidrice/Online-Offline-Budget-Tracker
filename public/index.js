@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 let transactions = [];
 let myChart;
 
@@ -65,15 +67,15 @@ function populateChart() {
   let ctx = document.getElementById("myChart").getContext("2d");
 
   myChart = new Chart(ctx, {
-    type: 'line',
-      data: {
-        labels,
-        datasets: [{
-            label: "Total Over Time",
-            fill: true,
-            backgroundColor: "#6666ff",
-            data
-        }]
+    type: "line",
+    data: {
+      labels,
+      datasets: [{
+        label: "Total Over Time",
+        fill: true,
+        backgroundColor: "#6666ff",
+        data
+      }]
     }
   });
 }
@@ -121,27 +123,27 @@ function sendTransaction(isAdding) {
       "Content-Type": "application/json"
     }
   })
-  .then(response => {    
-    return response.json();
-  })
-  .then(data => {
-    if (data.errors) {
-      errorEl.textContent = "Missing Information";
-    }
-    else {
+    .then(response => {    
+      return response.json();
+    })
+    .then(data => {
+      if (data.errors) {
+        errorEl.textContent = "Missing Information";
+      }
+      else {
+      // clear form
+        nameEl.value = "";
+        amountEl.value = "";
+      }
+    })
+    .catch(err => {
+    // fetch failed, so save in indexed db
+      saveRecord(transaction);
+
       // clear form
       nameEl.value = "";
       amountEl.value = "";
-    }
-  })
-  .catch(err => {
-    // fetch failed, so save in indexed db
-    saveRecord(transaction);
-
-    // clear form
-    nameEl.value = "";
-    amountEl.value = "";
-  });
+    });
 }
 
 document.querySelector("#add-btn").onclick = function() {
