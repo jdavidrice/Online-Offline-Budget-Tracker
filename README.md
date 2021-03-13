@@ -13,9 +13,9 @@
 
 A budget tracking app that uses IndexedDB to allow for offline use.
 
-[Link to Deployed App](https://online-offline-budget-tracker-app.herokuapp.com)
+[Link to Deployed App](https://best-budget-tracker-app.herokuapp.com)
 
-![Photo of App](online-offline-budget-tracker.png)
+![Photo of App](budget_app.png)
 
 ## Table of Contents
 
