@@ -25,10 +25,10 @@ function populateTotal() {
   let totalEl = document.querySelector("#total");
   totalEl.textContent = total;
 }
-console.log("Transactions:", transactions);
-console.log("t:", transactions);
-console.log("Total:", total);
-console.log("totalEl", totalEl);
+// console.log("Transactions:", transactions);
+// console.log("t:", transactions);
+// console.log("Total:", total);
+// console.log("totalEl", totalEl);
 // module.exports = total;
 
 function populateTable() {

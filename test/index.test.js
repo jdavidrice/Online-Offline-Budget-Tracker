@@ -3,9 +3,9 @@
 const total = require("../public/index.js");
 
 test("Can reduce transaction amounts to a single total value", () => {
-  let total = "";
-  let transactions =
-  expect(typeof (e)).toBe("object");
+  let total = 1;
+  let t = 2;
+  expect(populateTotal(total + t)).toBe(3);
 });
 
 // test('adds 1 + 2 to equal 3', () => {
