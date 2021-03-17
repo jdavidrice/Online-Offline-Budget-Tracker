@@ -19,7 +19,7 @@ fetch("/api/transaction")
 function populateTotal() {
   // reduce transaction amounts to a single total value
   let total = transactions.reduce((total, t) => {
-    return total + parseInt(t.value);
+    return total + parseInt(t.value, 10);
   }, 0);
 
   let totalEl = document.querySelector("#total");
@@ -55,7 +55,7 @@ function populateChart() {
 
   // create incremental values for chart
   let data = reversed.map(t => {
-    sum += parseInt(t.value);
+    sum += parseInt(t.value, 10);
     return sum;
   });
 
