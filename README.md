@@ -2,8 +2,10 @@
 
 <span align="center">
 
-[![Build Status](https://travis-ci.com/jdavidrice/online-offline-budget-tracker.svg?branch=main)](https://travis-ci.com/jdavidrice/online-offline-budget-tracker)
-[![GitHub license](https://img.shields.io/github/license/jdavidrice/online-offline-budget-tracker)](https://github.com/jdavidrice/online-offline-budget-tracker)
+[![Travis CI Build Status](https://travis-ci.com/jdavidrice/online-offline-budget-tracker.svg?branch=main)](https://travis-ci.com/jdavidrice/online-offline-budget-tracker)
+[![GitHub license](https://img.shields.io/github/license/jdavidrice/online-offline-budget-tracker)](https://github.com/jdavidrice/Online-Offline-Budget-Tracker/blob/main/LICENSE)
+[![GitHub Top Language](https://img.shields.io/github/languages/top/jdavidrice/online-offline-budget-tracker)](https://github.com/jdavidrice/online-offline-budget-tracker)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/897b245741684f22b8f3c59c907b0aa1)](https://www.codacy.com/gh/jdavidrice/Online-Offline-Budget-Tracker/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jdavidrice/Online-Offline-Budget-Tracker&amp;utm_campaign=Badge_Grade)
 
 ---
 
@@ -33,6 +35,7 @@ There is nothing to install to use this web app.
 
 ## Usage 
 
+Enter budget items into the "name of transaction field" and dollar amounts into the "transaction amount" field. Then, click on "add funds" or "subtract funds." Your budget item will be listed on the page, and the graph will update. Please note that you can use this app even when your device in not online; all entries will be saved locally and will sync with the database once internet access has been restored.  
 
 ## Questions
 
@@ -72,6 +75,6 @@ SOFTWARE.
 
 ## Tests
 
-This Heroku app uses Travis CI and Datree Smart Policy.
+This Heroku app uses Travis CI, Datree Smart Policy, and Codacy Code Quality metrics.
 
 *   [Return to Top](#online-offline-budget-tracker)
