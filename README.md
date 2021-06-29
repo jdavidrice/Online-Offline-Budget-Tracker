@@ -15,6 +15,15 @@
 
 A budget tracking app that uses IndexedDB to allow for offline use.
 
+**Project Dependencies**
+
+*  compression: ^1.7.4
+*  eslint: ^7.21.0
+*  express: ^4.17.1
+*  lite-server: ^2.5.3
+*  mongoose: ^5.5.15
+*  morgan: ^1.9.1
+
 [Link to Deployed App](https://best-budget-tracker-app.herokuapp.com)
 
 ![Photo of App](./public/images/budget_app.png)
